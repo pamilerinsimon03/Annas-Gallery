@@ -1,0 +1,343 @@
+/* Responsive Media Queries for ANNA's Gallery
+=============================================*/
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1200px) {
+    .decorative-elements .floating-element {
+        display: none;
+    }
+    
+    .section-header h2 {
+        font-size: var(--h2-font-size);
+    }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 992px) {
+    header {
+        width: 95%;
+    }
+    
+    .hero-content h1 {
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
+    }
+    
+    .collections .collections-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonial-container {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    
+    .contact .container {
+        flex-direction: column;
+    }
+    
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+    
+    .contact-info {
+        margin-bottom: 30px;
+    }
+    
+    .collections-page {
+        padding: 100px 0 60px;
+    }
+    
+    .collections-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Devices (Landscape Phones, less than 768px) */
+@media (max-width: 768px) {
+    header {
+        top: 10px;
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 20px;
+        padding: 15px 20px;
+        max-width: 720px;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    nav {
+        position: fixed;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+        max-height: 80vh;
+        background-color: rgba(18, 18, 18, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        display: none;
+        z-index: 999;
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        overflow: auto;
+        padding: 20px 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 30px;
+    }
+    
+    nav ul li {
+        margin-left: 0;
+    }
+    
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+    
+    .about, .collections, .testimonials, .contact {
+        padding: var(--section-padding);
+    }
+    
+    .about {
+        text-align: center;
+    }
+    
+    .about .about-content {
+        flex-direction: column;
+    }
+    
+    .about-text, .about-image {
+        width: 100%;
+    }
+    
+    .about-image {
+        margin-top: 30px;
+        height: 300px;
+    }
+    
+    .collections .collections-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-image {
+        height: 180px;
+    }
+    
+    .contact .contact-info {
+        display: block;
+        text-align: left;
+    }
+    
+    .contact .social-links {
+        justify-content: flex-start;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+    
+    .footer-section h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-section .social-links {
+        justify-content: center;
+    }
+    
+    .collection-section {
+        margin-bottom: 40px;
+    }
+    
+    .collection-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .collections-page {
+        padding: 140px 0 60px;
+    }
+    
+    .collections-page .section-header {
+        margin-bottom: 50px;
+    }
+    
+    .collections-page .section-header h1 {
+        margin-bottom: 20px;
+    }
+    
+    .collections-page .section-header .divider {
+        margin-bottom: 20px;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-content {
+        padding: 0 10px;
+    }
+    
+    .hero-content h1 {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+    
+    .collections .collections-container {
+        gap: 25px;
+    }
+    
+    .jewelry-item {
+        margin-bottom: 10px;
+    }
+    
+    .testimonial {
+        padding: 20px;
+    }
+    
+    .contact-form {
+        padding: 25px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-logo, .footer-section {
+        text-align: center;
+    }
+    
+    .footer-logo p {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .collections-page {
+        padding: 80px 0 40px;
+    }
+    
+    .collections-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-image {
+        height: 180px;
+    }
+    
+    .product-card h3 {
+        font-size: 1.2rem;
+        margin: 15px 15px 5px;
+    }
+    
+    .product-card p {
+        margin: 0 15px 10px;
+    }
+    
+    .product-price {
+        margin: 0 15px 15px;
+    }
+    
+    .whatsapp-btn {
+        margin: 0 15px 15px;
+        padding: 10px 20px;
+    }
+}
+
+/* Specific Menu styling */
+nav.active {
+    display: block;
+}
+
+/* Prevent body scrolling when menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* Header scroll effect */
+header.scrolled {
+    background-color: rgba(18, 18, 18, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Desktop-specific hover animations */
+@media (min-width: 993px) {
+    nav ul li a {
+        position: relative;
+    }
+    
+    nav ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--accent-color);
+        transition: width 0.3s ease;
+    }
+    
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+    
+    .jewelry-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+    .hover-scale,
+    .jewelry-item {
+        transition: none;
+    }
+    
+    .hover-scale:active,
+    .jewelry-item:active {
+        transform: scale(0.98);
+    }
+    
+    .product-card:hover {
+        transform: none;
+    }
+    
+    .product-card:hover .product-image img {
+        transform: none;
+    }
+    
+    .product-card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #e0e0e0;
+        --light-text: #ffffff;
+        --dark-bg: #121212;
+        --dark-bg-lighter: #1e1e1e;
+        --dark-card: #252525;
+    }
+}

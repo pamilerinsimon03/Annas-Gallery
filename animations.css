@@ -1,0 +1,171 @@
+/* Premium Animations Framework */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Section Entrance Animations */
+.animate-section {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.animate-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Premium Hover Effects */
+.hover-scale {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.hover-scale:hover {
+  transform: scale(1.03);
+}
+
+/* Jewelry Interaction Effects */
+.jewelry-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
+}
+
+.jewelry-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* Smooth Transitions */
+[data-animate="fade-up"] {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+[data-animate="scale-in"] {
+  animation: scaleIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+[data-animate="fade-in"] {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Mobile Menu Animation */
+.mobile-menu-btn i {
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-btn.active i {
+  transform: rotate(90deg);
+}
+
+/* Mobile Navigation Animation */
+nav.active {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+nav.active ul li {
+  animation: fadeInUp 0.3s ease forwards;
+  animation-delay: calc(0.05s * var(--item-index, 0));
+  opacity: 0;
+}
+
+/* Optimized Animations for Low-Power Devices */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .animate-section, [data-animate] {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  
+  .hover-scale:hover,
+  .jewelry-item:hover {
+    transform: none !important;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+  .hover-scale,
+  .jewelry-item {
+    transition: none;
+  }
+  
+  .hover-scale:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Mobile Animation Adjustments */
+@media (max-width: 768px) {
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  [data-animate="fade-up"],
+  [data-animate="scale-in"] {
+    animation-duration: 0.5s;
+  }
+  
+  .floating-element {
+    animation-duration: 4s !important;
+  }
+}
+
+/* Hide animations on very small screens for better performance */
+@media (max-width: 480px) {
+  .decorative-elements {
+    display: none !important;
+  }
+}

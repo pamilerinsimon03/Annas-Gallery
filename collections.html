@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, viewport-fit=cover">
+    <title>Collections - ANNA's Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- SVG Definitions for 3D Elements -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <filter id="glow">
+                <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+                <feMerge>
+                    <feMergeNode in="coloredBlur" />
+                    <feMergeNode in="SourceGraphic" />
+                </feMerge>
+            </filter>
+        </defs>
+    </svg>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="logo.svg" alt="ANNA's Gallery Logo">
+                </div>
+                <h1>ANNA's Gallery</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#collections">Collections</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="collections-page">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Our Complete Collection</h1>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Explore our extensive range of fine jewelry pieces</p>
+                </div>
+
+                <!-- Rings Collection -->
+                <div id="rings" class="collection-section animate-section" data-animate="fade-up">
+                    <h2>Rings Collection</h2>
+                    <div class="collections-container">
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Knuckle Rings.jpg" alt="Knuckle Rings">
+                            </div>
+                            <h3>Knuckle Rings</h3>
+                            <p>Elegant Knuckle Rings to beautify the fingers.</p>
+                            <div class="product-price">₦1,500</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Knuckle%20Rings%20priced%20at%20₦1,500%20per%20one"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1589674781759-c21c37956a44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                    alt="Gold Band Ring">
+                            </div>
+                            <h3>Gold Band Ring</h3>
+                            <p>Beautiful Ring to suit all</p>
+                            <div class="product-price">₦5,000</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Gold%20Band%20Ring%20priced%20at%20₦5,000"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1636&q=80"
+                                    alt="Sapphire Statement Ring">
+                            </div>
+                            <h3>Sapphire Statement Ring</h3>
+                            <p>Bold design</p>
+                            <div class="product-price">₦1,799</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Sapphire%20Statement%20Ring%20priced%20at%20₦1,799"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Necklaces Collection -->
+                <div id="necklaces" class="collection-section animate-section" data-animate="fade-up">
+                    <h2>Necklaces Collection</h2>
+                    <div class="collections-container">
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Heart pendant.jpg" alt="Heart Pendant Necklace">
+                            </div>
+                            <h3>Heart Pendant Necklace</h3>
+                            <p>Delicate pendant featuring a brilliant-cut.</p>
+                            <div class="product-price">₦2,000</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Heart%20Pendant%20Necklace%20priced%20at%20₦2,000"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Blue Necklace.jpg" alt="Royal Blue Necklace and earrings jewellery set">
+                            </div>
+                            <h3>Royal Blue Necklace and earrings jewellery set</h3>
+                            <p>Beautiful Blue Necklace with a pair of equally stunning earrings</p>
+                            <div class="product-price">₦3,500</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Royal%20Blue%20Necklace%20and%20earrings%20jewelley%20set%20priced%20at%20₦3,500"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Stylish Bead.jpg" alt="5pcs Set Stylish Bead">
+                            </div>
+                            <h3>5pcs Set Stylish Bead</h3>
+                            <p>Beautiful Set of Necklaces made with smooth rounded beads.</p>
+                            <div class="product-price">₦4,800</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%205Pcs%20Set%20Stylish%20Bead%20priced%20at%20₦4,800"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bracelets Collection -->
+                <div id="bracelets" class="collection-section animate-section" data-animate="fade-up">
+                    <h2>Bracelets Collection</h2>
+                    <div class="collections-container">
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Bohemian Bracelet.jpg" alt="Bohemian Style set of 5 Bracelets">
+                            </div>
+                            <h3>Bohemian Style set of 5 Bracelets</h3>
+                            <p>5 Ephemeral set of bracelets designed with elegance and beauty in mind</p>
+                            <div class="product-price">₦4,000</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Bohemian%20Style%20Set%20of%205%20Bracelets%20priced%20at%20₦4,000"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                                    alt="Gold Bangle Bracelet">
+                            </div>
+                            <h3>Gold Bangle Bracelet</h3>
+                            <p>Gold bangle with intricate engraving.</p>
+                            <div class="product-price">₦3,500</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Gold%20Bangle%20Bracelet%20priced%20at%20₦3,500"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Elegant bracelet.jpg"
+                                    alt="6pcs Elegant ladies fashion watch and bracelet set">
+                            </div>
+                            <h3>6pcs Elegant ladies fashion watch and bracelet set</h3>
+                            <p>Elegant designs featuring freshwater pearls and gold chain.</p>
+                            <div class="product-price">₦5000</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%206pcs%20Elegant%20Ladies%20fashion%20watch%20and%20bracelet%20set%20priced%20at%20₦5000"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Earrings Collection -->
+                <div id="earrings" class="collection-section animate-section" data-animate="fade-up">
+                    <h2>Earrings Collection</h2>
+                    <div class="collections-container">
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Boho Vintage.jpg" alt="Boho Vintage Style Earrings">
+                            </div>
+                            <h3>Boho Vintage Style Earrings</h3>
+                            <p>Perfectly hand crafted Boho Style Earrings.</p>
+                            <div class="product-price">₦2,500</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Boho%20Vintage%20Style%20Earrings%20priced%20at%20₦2,500"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Heart pendant.jpg" alt="Delicate Metal Heart Pendant Hoop Earrings">
+                            </div>
+                            <h3>Delicate Metal Heart Pendant Hoop Earrings</h3>
+                            <p>Delicate Metal Heart Structures designed to compliment any dress of the wearer</p>
+                            <div class="product-price">₦1,700</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Delicate%20Metal%20Heart%20Pendant%20Hoop%20Earrings%20priced%20at%20₦1,700"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Vintage hoops.jpg" alt="12pcs Vintage Hoops Earrings">
+                            </div>
+                            <h3>12pcs Vintage Hoops Earrings</h3>
+                            <p>Silver plated vintage hoop earrings with a touch of elegance.</p>
+                            <div class="product-price">₦3,800</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%2012pcs%20Vintage%20Hoops%20Earrings%20priced%20at%20₦3,800"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Watches Collection -->
+                <div id="watches" class="collection-section animate-section" data-animate="fade-up">
+                    <h2>Watches Collection</h2>
+                    <div class="collections-container">
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Gold Watch.png" alt="Luxury Gold Watch">
+                            </div>
+                            <h3>Luxury Gold Watch</h3>
+                            <p>Watch with a gold case with premium automatic movement.</p>
+                            <div class="product-price">₦25,000</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Luxury%20Gold%20Watch%20priced%20at%20₦25,000"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Diamond Watch.png" alt="Diamond Bezel Watch">
+                            </div>
+                            <h3>Diamond Bezel Watch</h3>
+                            <p>Elegant watch with diamond-set bezel and mother of pearl dial.</p>
+                            <div class="product-price">₦45,000</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Diamond%20Bezel%20Watch%20priced%20at%20₦45,000"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Silver watch.png" alt="Classic Silver Watch">
+                            </div>
+                            <h3>Classic Silver Watch</h3>
+                            <p>Timeless design with stainless steel case and bracelet.</p>
+                            <div class="product-price">₦20,000</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Classic%20Silver%20Watch%20priced%20at%20₦20,000"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gift Sets Collection -->
+                <div id="gift-sets" class="collection-section animate-section" data-animate="fade-up">
+                    <h2>Gift Sets Collection</h2>
+                    <div class="collections-container">
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Diamond Gift Set.png" alt="Diamond Gift Set">
+                            </div>
+                            <h3>Diamond Gift Set</h3>
+                            <p>Matching necklace, earrings, and bracelet with diamond accents.</p>
+                            <div class="product-price">₦15,000</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Diamond%20Gift%20Set%20priced%20at%20₦15,000"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Pearl Gift Set.png" alt="Pearl Gift Set">
+                            </div>
+                            <h3>Pearl Gift Set</h3>
+                            <p>Elegant pearl necklace and earrings in luxury gift box.</p>
+                            <div class="product-price">₦18,000</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Pearl%20Gift%20Set%20priced%20at%20₦18,000"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                        <div class="product-card jewelry-item hover-scale">
+                            <div class="product-image">
+                                <img src="/img/Gold Gift Set.png" alt="Gold Jewelry Set">
+                            </div>
+                            <h3>Gold Jewelry Set</h3>
+                            <p>Coordinated gold bracelet and ring.</p>
+                            <div class="product-price">₦20,000</div>
+                            <a href="https://wa.me/2348063472365?text=I'm%20interested%20in%20the%20Gold%20Jewelry%20Set%20priced%20at%20₦20,000"
+                                class="btn whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <img src="logo.svg" alt="ANNA's Gallery Logo">
+                        </div>
+                        <h2>ANNA's Gallery</h2>
+                    </div>
+                    <p>Exquisite jewelry for discerning tastes.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Explore</h3>
+                        <ul>
+                            <li><a href="index.html#hero">Home</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#collections">Collections</a></li>
+                            <li><a href="index.html#testimonials">Testimonials</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Connect</h3>
+                        <ul class="social-links">
+                            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Shipping &amp; Returns</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ANNA's Gallery. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

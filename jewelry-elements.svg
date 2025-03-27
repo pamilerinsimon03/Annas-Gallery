@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+  <!-- Diamond Shape -->
+  <symbol id="diamond" viewBox="0 0 100 100">
+    <path d="M50 0L90 50L50 100L10 50L50 0Z" stroke="#d4af37" stroke-width="2" fill="none"/>
+    <path d="M50 20L70 50L50 80L30 50L50 20Z" stroke="#d4af37" stroke-width="1.5" fill="rgba(212, 175, 55, 0.1)"/>
+  </symbol>
+  
+  <!-- Ring Shape -->
+  <symbol id="ring" viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="40" stroke="#d4af37" stroke-width="3" fill="none"/>
+    <circle cx="50" cy="50" r="30" stroke="#d4af37" stroke-width="2" fill="rgba(212, 175, 55, 0.05)"/>
+    <circle cx="50" cy="50" r="20" stroke="#d4af37" stroke-width="1" fill="rgba(212, 175, 55, 0.1)"/>
+  </symbol>
+  
+  <!-- Necklace Shape -->
+  <symbol id="necklace" viewBox="0 0 120 60">
+    <path d="M10 30C10 30 30 10 60 10C90 10 110 30 110 30" stroke="#d4af37" stroke-width="2" fill="none"/>
+    <circle cx="60" cy="30" r="8" stroke="#d4af37" stroke-width="1.5" fill="rgba(212, 175, 55, 0.2)"/>
+    <circle cx="40" cy="25" r="4" stroke="#d4af37" stroke-width="1" fill="rgba(212, 175, 55, 0.15)"/>
+    <circle cx="80" cy="25" r="4" stroke="#d4af37" stroke-width="1" fill="rgba(212, 175, 55, 0.15)"/>
+  </symbol>
+  
+  <!-- Gemstone Shape -->
+  <symbol id="gemstone" viewBox="0 0 100 100">
+    <path d="M30 20H70L90 50L50 90L10 50L30 20Z" stroke="#d4af37" stroke-width="2" fill="none"/>
+    <path d="M40 30H60L70 50L50 70L30 50L40 30Z" stroke="#d4af37" stroke-width="1" fill="rgba(212, 175, 55, 0.1)"/>
+    <line x1="50" y1="30" x2="50" y2="70" stroke="#d4af37" stroke-width="1"/>
+    <line x1="30" y1="50" x2="70" y2="50" stroke="#d4af37" stroke-width="1"/>
+  </symbol>
+</svg>

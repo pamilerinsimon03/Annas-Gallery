@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, viewport-fit=cover">
+    <title>ANNA's Gallery - Fine Jewelry Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="logo-icon">
+                <img src="logo.svg" alt="ANNA's Gallery Logo">
+            </div>
+            <h2>ANNA's Gallery</h2>
+            <div class="loader-ring">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="page-content" class="page-content">
+        <!-- SVG Definitions for D Elements -->
+        <svg width="0" height="0" style="position: absolute;">
+            <defs>
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="2.5" result="coloredBlur" />
+                    <feMerge>
+                        <feMergeNode in="coloredBlur" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+        </svg>
+
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="logo.svg" alt="ANNA's Gallery Logo">
+                    </div>
+                    <h1>ANNA's Gallery</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <section id="hero" class="hero animate-section" data-animate="fade-up">
+            <!-- 3D Decorative Elements -->
+            <div class="decorative-elements">
+                <div class="floating-element diamond-1">
+                    <svg width="80" height="80" viewBox="0 0 100 100">
+                        <use href="jewelry-elements.svg#diamond" filter="url(#glow)"></use>
+                    </svg>
+                </div>
+                <div class="floating-element ring-1">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <use href="jewelry-elements.svg#ring" filter="url(#glow)"></use>
+                    </svg>
+                </div>
+                <div class="floating-element necklace-1">
+                    <svg width="120" height="60" viewBox="0 0 120 60">
+                        <use href="jewelry-elements.svg#necklace" filter="url(#glow)"></use>
+                    </svg>
+                </div>
+                <div class="floating-element gemstone-1">
+                    <svg width="70" height="70" viewBox="0 0 100 100">
+                        <use href="jewelry-elements.svg#gemstone" filter="url(#glow)"></use>
+                    </svg>
+                </div>
+                <div class="floating-element diamond-2">
+                    <svg width="60" height="60" viewBox="0 0 100 100">
+                        <use href="jewelry-elements.svg#diamond" filter="url(#glow)"></use>
+                    </svg>
+                </div>
+                <div class="floating-element ring-2">
+                    <svg width="90" height="90" viewBox="0 0 100 100">
+                        <use href="jewelry-elements.svg#ring" filter="url(#glow)"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Exquisite Jewelry</h2>
+                    <h3>For Extraordinary Moments</h3>
+                    <p>Discover our handcrafted collection of premium jewelry pieces</p>
+                    <a href="collections.html" class="btn hover-scale">Explore Collections</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about animate-section" data-animate="fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About ANNA's Gallery</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>ANNA's Gallery is a premium brand owned by Ms. Anthonia Dilichukuwu specializing in
+                            high-quality jewelry, crafted with precision
+                            and passion</p>
+                        <p>Our commitment to excellence ensures that every item in our collection meets the highest
+                            standards of quality and beauty, making them perfect for those who appreciate the finer
+                            things
+                            in life.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img id="Founder-pic" src="./img/FB_IMG_1742575406762.jpg"
+                                alt="CEO & Founder of Anna's Gallery">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="collections" class="collections animate-section" data-animate="scale-in">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Collections</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="collection-categories">
+                    <div class="category jewelry-item hover-scale">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Rings Collection">
+                        </div>
+                        <h3>Rings</h3>
+                        <p>Elegant rings for every occasion, from subtle everyday pieces to statement designs.</p>
+                        <a href="collections.html#rings" class="btn-outline hover-scale">View Collection</a>
+                    </div>
+                    <div class="category jewelry-item hover-scale">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                                alt="Necklaces Collection">
+                        </div>
+                        <h3>Necklaces</h3>
+                        <p>Stunning necklaces that add a touch of sophistication to any ensemble.</p>
+                        <a href="collections.html#necklaces" class="btn-outline hover-scale">View Collection</a>
+                    </div>
+                    <div class="category jewelry-item hover-scale">
+                        <div class="category-image">
+                            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                alt="Bracelets Collection">
+                        </div>
+                        <h3>Bracelets</h3>
+                        <p>Exquisite bracelets that combine timeless elegance with modern design.</p>
+                        <a href="collections.html#bracelets" class="btn-outline hover-scale">View Collection</a>
+                    </div>
+                </div>
+                <div class="see-more-container">
+                    <a href="collections.html" class="see-more-btn hover-scale">See Full Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials animate-section" data-animate="fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Client Testimonials</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial-container">
+                        <div class="testimonial">
+                            <div class="quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>The craftsmanship of my ring from ANNA's Gallery is exceptional. It's become my most
+                                    treasured piece of jewelry.</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="client">
+                                <p class="name">Adenike Opeyemi</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>I received so many compliments on my necklace from ANNA's Gallery. The attention to
+                                    detail is
+                                    remarkable.</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="client">
+                                <p class="name">Sarah Chinedu</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>The bracelet I purchased from ANNA's Gallery has become my signature piece. The
+                                    quality
+                                    and design are unmatched.</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="client">
+                                <p class="name">Arike Olushina</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>ANNA's Gallery jewelry makes me feel elegant and confident. Their customer service is
+                                    as
+                                    exceptional as their pieces.</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="client">
+                                <p class="name">Adeyemi Areola</p>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>I've been collecting jewelry for years, and ANNA's Gallery pieces stand out for their
+                                    uniqueness and superior craftsmanship.</p>
+                                <i class="fas fa-quote-right"></i>
+                            </div>
+                            <div class="client">
+                                <p class="name">Olufunmi Oreoluwapo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-controls">
+                        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <div class="testimonial-dots"></div>
+                        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Iwo Road, Ibadan, Oyo State.</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+234-806-3472-365</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>anthoniadilichukwu5@gmail.com</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm" action="https://formsubmit.co/anthoniadilichukwu5@gmail.com"
+                            method="POST">
+                            <!-- FormSubmit configuration -->
+                            <input type="hidden" name="_subject" value="New contact from ANNA's Gallery Website">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://annasgallery.com/thank-you.html">
+
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" id="phone" placeholder="Your Phone (Optional)">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="form-status"></div>
+                            <button type="submit" id="submitBtn" class="btn hover-scale">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <img src="logo.svg" alt="ANNA's Gallery Logo">
+                            </div>
+                            <h2>ANNA's Gallery</h2>
+                        </div>
+                        <p>Exquisite jewelry for discerning tastes.</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h3>Explore</h3>
+                            <ul>
+                                <li><a href="#hero">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#collections">Collections</a></li>
+                                <li><a href="#testimonials">Testimonials</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Connect</h3>
+                            <ul class="social-links">
+                                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Legal</h3>
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Shipping &amp; Returns</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 ANNA's Gallery. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
